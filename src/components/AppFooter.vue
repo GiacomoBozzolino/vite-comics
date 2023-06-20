@@ -242,12 +242,12 @@ h3{
     justify-content: space-between;
 }
 .logo{
-   
     background-image: url(public/assets/dc-logo-bg.png);
-    height: 500px;
-    width: 100%;
+    max-height:40%;
+    width: 40%;
     background-repeat: no-repeat;
-    background-position: right top
+    background-position: center;
+    background-size: cover
 }
 .lower-footer{
     background-color: #303030;
