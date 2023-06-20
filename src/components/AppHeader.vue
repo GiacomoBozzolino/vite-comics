@@ -105,8 +105,9 @@ ul{
         display: flex;
         margin: 0 10px;
         height: 100%;
-       align-items: center;
-       padding-bottom: 5px;
+         align-items: center;
+        padding-bottom: 5px;
+        font-weight: 600;
      
         
     }
