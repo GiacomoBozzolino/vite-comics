@@ -12,7 +12,7 @@
                     {
                         label : 'COMICS',
                         link: '#',
-                        active: false,
+                        active: true,
                         
                     },
                     {
@@ -77,7 +77,7 @@
         </div>
         <div>
             <ul>
-                <li v-for="(item, index) in links" :key="index">
+                <li v-for="(item, index) in links" :class="item.active ? 'active' : ''" :key="index">
                     <a :href="item.link">{{item.label}}</a>
                 </li>
             </ul>
@@ -99,12 +99,29 @@ header{
 ul{
     display: flex;
     flex-wrap: wrap;
+    height: 150px;
+    align-items: center;
     li{
-        padding: 0 10px;
+        display: flex;
+        margin: 0 10px;
+        height: 100%;
+       align-items: center;
+       padding-bottom: 5px;
+     
+        
     }
 }
 .container{
     max-width: 1400px;
     margin: 0 auto;
+  }
+
+  .active{
+    border-bottom: 5px solid #1F81FA;
+    padding-bottom: 0;
+    
+        a{
+            color:#1F81FA
+        }
   }
 </style>
