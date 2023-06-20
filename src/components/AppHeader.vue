@@ -6,7 +6,7 @@
 
 <template lang="">
     <div>
-        <h1>header</h1>
+        <h1>Header</h1>
     </div>
 </template>
 <style lang="">
