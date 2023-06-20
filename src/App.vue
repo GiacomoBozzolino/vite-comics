@@ -15,7 +15,7 @@ export default {
 
 
 <template lang="">
-  
+  <div  class="container">
     <div>
       <AppHeader/>
     </div>
@@ -25,6 +25,9 @@ export default {
     <div>
       <AppFooter/>
     </div>
+
+  </div>
+  
     
 
   
@@ -33,6 +36,8 @@ export default {
 
 <style lang="scss" >
 @use '../styles/generals.scss' as*
+
+
 
 
   

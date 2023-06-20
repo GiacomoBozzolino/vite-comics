@@ -31,31 +31,40 @@
 </script>
 
 <template lang="">
-    <div class="container">
-        <div class="content">
-            <div> --Content goes here-- </div> 
-            
-        </div>
-        <div class="blue-content">
-            <ul>
-                <li v-for="(item, index) in menu" :key="index">
-                    <a href="#">
-                        <img :src="item.img" alt="">
-                        <div>{{item.label}}</div>
-                    </a>
-                </li>
+    <div>
+        <div class="black">
+            <div class="container content">
+                <div> --Content goes here-- </div> 
                 
-            </ul>
+            </div>
         </div>
-
+        <div class="blue">
+            <div class="container blue-content">
+                <ul>
+                    <li v-for="(item, index) in menu" :key="index">
+                        <a href="#">
+                            <img :src="item.img" alt="">
+                            <div>{{item.label}}</div>
+                        </a>
+                    </li>   
+                </ul>
+            </div>
+        </div>
     </div>
 </template>
 
 
 <style lang="scss" scoped>
+.blue{
+    background-color:#1F81FA ;
+}
+.black{
+    background-color: black;
+}
+
 .content{
     height: 150px;
-    background-color: black;
+   
     color: white;
     display: flex;
     align-items: center;
@@ -64,17 +73,22 @@
             padding: 0 20px; 
         }
 }
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 
 
 .blue-content{
     height: 200px;
-    background-color:#1F81FA ;
+    
     display: flex;
     justify-content: center;
         ul{
             display: flex;
             padding: 0 80px;
            justify-content: space-around;
+           flex-wrap: wrap;
 
            li{
                display: flex;

@@ -71,7 +71,7 @@
 </script>
 
 <template lang="">
-    <header>
+    <header class="container">
         <div>
             <img src="/assets/dc-logo.png" alt="">
         </div>
@@ -79,7 +79,6 @@
             <ul>
                 <li v-for="(item, index) in links" :key="index">
                     <a :href="item.link">{{item.label}}</a>
-
                 </li>
             </ul>
         </div>
@@ -88,7 +87,7 @@
 
 <style lang="scss" scoped>
 header{
-    max-width: 100vw;
+   
     display: flex;
     height: 150px;
     padding: 20px;
@@ -104,5 +103,8 @@ ul{
         padding: 0 10px;
     }
 }
-    
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 </style>
