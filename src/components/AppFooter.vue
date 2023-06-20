@@ -113,42 +113,43 @@
 
 <template lang="">
     <footer>
-        <div class="upper-footer container">
-            <div>
-                <h3>DC COMICS</h3>
-                <ul>
-                    <li v-for="(item, index) in comics" :key="index">
-                    <a :href="item.link">{{item.label}}</a>
-                </li>
-                </ul>
-
-                
-                    <h3>SHOP</h3>
-                <ul>
-                    <li >
-                        <a href="#">Shop DC</a>
+        <div class="container flex">
+            <div class="upper-footer">
+                <div>
+                    <h3>DC COMICS</h3>
+                    <ul>
+                        <li v-for="(item, index) in comics" :key="index">
+                            <a :href="item.link">{{item.label}}</a>
+                        </li>
+                    </ul>
+    
+                    
+                        <h3>SHOP</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Shop DC</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop DC Collectibles</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>DC </h3>
+                    <ul>
+                        <li v-for="(item, index) in info" :key="index">
+                        <a :href="item.link">{{item.label}}</a>
                     </li>
-                    <li >
-                        <a href="#">Shop DC Collectibles</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>DC </h3>
-                <ul>
-                    <li v-for="(item, index) in info" :key="index">
-                    <a :href="item.link">{{item.label}}</a>
-                </li>
-                </ul>
-            </div>
-            <div>
-                <h3>SITES</h3>
-                <ul>
-                    <li v-for="(item, index) in sites" :key="index">
-                    <a :href="item.link">{{item.label}}</a>
-                </li>
-                </ul>
+                    </ul>
+                </div>
+                <div>
+                    <h3>SITES</h3>
+                    <ul>
+                        <li v-for="(item, index) in sites" :key="index">
+                            <a :href="item.link">{{item.label}}</a>
+                         </li>
+                    </ul>
+                </div>
             </div>
             <div class="logo">
                 <!-- <img src="assets/dc-logo-bg.png" alt=""> -->
@@ -206,6 +207,7 @@
 
 footer{
     background-image: url(public/assets/footer-bg.jpg);
+    background-size: cover;
 }
 .container{
     max-width: 1400px;
@@ -213,9 +215,6 @@ footer{
   }
 
 .upper-footer{
-    position: relative;
-    
-    height: 400px;
     background-size: cover;
     display: flex;
         div{
@@ -234,19 +233,21 @@ footer{
 }
 
 h3{
-    font-size: 20px;
+    font-size: 17px;
     padding: 10px 0;
 }
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
 .logo{
-    position: absolute;
-    // top: -100px;
-    // right: 0;
+   
     background-image: url(public/assets/dc-logo-bg.png);
-    height: 100%;
+    height: 500px;
     width: 100%;
     background-repeat: no-repeat;
-    background-position: right;
-    
+    background-position: right top
 }
 .lower-footer{
     background-color: #303030;
@@ -277,6 +278,11 @@ h3{
     align-items: center;
      div{
             display: flex;
+            h3{
+                color: #1F81FA;
+                margin-right: 20px;
+                font-size: 22px;
+            }
             ul{
                 display: flex;
                 li{
