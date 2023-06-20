@@ -88,16 +88,18 @@
 
 <style lang="scss" scoped>
 header{
-    max-width: 100%;
+    max-width: 100vw;
     display: flex;
     height: 150px;
     padding: 20px;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 ul{
     display: flex;
+    flex-wrap: wrap;
     li{
         padding: 0 10px;
     }
