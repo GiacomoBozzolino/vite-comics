@@ -5,23 +5,23 @@
                 menu: [
                     {
                         label: 'DIGITAL COMICS',
-                        img:'buy-comics-digital-comics.png',
+                        img:'../assets/buy-comics-digital-comics.png',
                     },
                     {
                         label: 'DC MERCHANDISE',
-                        img:'../assets/img/buy-comics-merchandise.png',
+                        img:'../assets/buy-comics-merchandise.png',
                     },
                     {
                         label: 'SUBSCRIPTION',
-                        img:'../assets/img/buy-comics-subscription.png',
+                        img:'../assets/buy-comics-subscription.png',
                     },
                     {
                         label: 'COMIC SHOP LOCATOR',
-                        img:'../assets/img/buy-comics-shop-locator.png',
+                        img:'../assets/buy-comics-shop-locator.png',
                     },
                     {
                         label: 'DC POWER VISA',
-                        img :'../assets/img/buy-dc-power-visa.svg',
+                        img :'../assets/buy-dc-power-visa.svg',
                     },
                 ]
             }
@@ -42,6 +42,7 @@
                     <img :src="item.img" alt="">
                     <div>{{item.label}}</div>
                 </li>
+                <img src="../assets/buy-comics-digital-comics.png" alt="">
                 
             </ul>
         </div>
@@ -69,6 +70,10 @@
     background-color:#1F81FA ;
         ul{
             display: flex;
+            padding: 0 20px;
+            justify-content: space-between;
+
+            
         }
 
 }

@@ -73,7 +73,7 @@
 <template lang="">
     <header>
         <div>
-            <img src="../assets/img/dc-logo.png" alt="">
+            <img src="../assets/dc-logo.png" alt="">
         </div>
         <div>
             <ul>
