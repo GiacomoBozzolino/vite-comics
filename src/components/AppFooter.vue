@@ -151,11 +151,48 @@
                 </ul>
             </div>
             <div class="logo">
-                <img src="assets/dc-logo-bg.png" alt="">
+                <!-- <img src="assets/dc-logo-bg.png" alt=""> -->
             </div> 
         </div>
         <div class="lower-footer ">
             <div class="container">
+                <div class="row">
+                    <div class="lower-content">
+                        <div>
+                            <button>SIGN-UP NOW!</button>
+                        </div>
+                        <div>
+                            <h3>FOLLOW US</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/footer-facebook.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/footer-twitter.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/footer-youtube.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/footer-pinterest.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/footer-periscope.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -202,15 +239,56 @@ h3{
 }
 .logo{
     position: absolute;
-    top: -100px;
-    right: 0;
+    // top: -100px;
+    // right: 0;
+    background-image: url(public/assets/dc-logo-bg.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
     
 }
 .lower-footer{
     background-color: #303030;
     height: 100px;
-    z-index: 100;
+        .container{
+            height: 100%;
+
+            button{
+                padding: 20px;
+                background-color: transparent;
+                border: 2px solid #1F81FA;
+                color: white;
+                font-size: 17px;
+                font-weight: bold;
+
+            }
+        }
     
+
 }
-    
+
+
+.lower-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     div{
+            display: flex;
+            ul{
+                display: flex;
+                li{
+                    padding: 0 10px;
+                }
+            }
+
+        }
+}
+    .row{
+        height: 100%;
+        padding: 0 20px;
+        
+    }
 </style>
