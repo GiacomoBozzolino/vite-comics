@@ -13,15 +13,27 @@ export default {
 }
 </script>
 
-  <style lang="">
-    
-  </style>
 
 <template lang="">
-  <div>
-    <AppHeader/>
-    <AppMain/>
-    <AppFooter/>
+  
+    <div>
+      <AppHeader/>
+    </div>
+    <div>
+      <AppMain/>
+    </div>
+    <div>
+      <AppFooter/>
+    </div>
+    
 
-  </div>
+  
 </template>
+
+
+<style lang="scss" >
+@use '../styles/generals.scss' as*
+
+
+  
+</style>
