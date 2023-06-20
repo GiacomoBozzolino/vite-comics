@@ -13,14 +13,14 @@
                     },
                     {
                         label: 'SUBSCRIPTION',
-                        img:'../assets/buy-comics-subscription.png',
+                        img:'../assets/buy-comics-subscriptions.png',
                     },
                     {
                         label: 'COMIC SHOP LOCATOR',
                         img:'../assets/buy-comics-shop-locator.png',
                     },
                     {
-                        label: 'DC POWER VISA',
+                        label : 'DC POWER VISA',
                         img :'../assets/buy-dc-power-visa.svg',
                     },
                 ]
@@ -39,10 +39,11 @@
         <div class="blue-content">
             <ul>
                 <li v-for="(item, index) in menu" :key="index">
-                    <img :src="item.img" alt="">
-                    <div>{{item.label}}</div>
+                    <a href="#">
+                        <img :src="item.img" alt="">
+                        <div>{{item.label}}</div>
+                    </a>
                 </li>
-                <img src="../assets/buy-comics-digital-comics.png" alt="">
                 
             </ul>
         </div>
@@ -68,12 +69,27 @@
 .blue-content{
     height: 200px;
     background-color:#1F81FA ;
+    display: flex;
+    justify-content: center;
         ul{
             display: flex;
-            padding: 0 20px;
-            justify-content: space-between;
+            padding: 0 80px;
+           justify-content: space-around;
 
-            
+           li{
+               display: flex;
+               padding: 0 20px;
+               a{
+                    display: flex;
+                    color: white;
+                    align-items: center;
+                       img{
+                           width: 50px;
+                           margin: 0 10px;  
+                       }  
+                }
+
+           };
         }
 
 }
