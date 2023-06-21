@@ -5,7 +5,7 @@ import AppComics from './AppComics.vue';
     export default {
         components: {
             comics,
-            AppComics
+            AppComics,
         },
 
 
@@ -44,7 +44,7 @@ import AppComics from './AppComics.vue';
 
 <template lang="">
     <div >
-        <img id="jumbo" src="/assets/jumbotron.jpg" >
+        <img id="jumbo"  class="flex" src="/assets/jumbotron.jpg" >
     </div>
     <div class="black">
         <div class="container content">
@@ -56,8 +56,8 @@ import AppComics from './AppComics.vue';
         </div>
     </div>
     <div class="blue">
-        <div class="container blue-content">
-            <ul>
+        <div class="container blue-content flex">
+            <ul class="flex">
                 <li v-for="(item, index) in menu" :key="index">
                     <a href="#">
                         <img :src="item.img" alt="">
@@ -81,24 +81,18 @@ import AppComics from './AppComics.vue';
 
 .content{
     position: relative;
-    // height: 150px;
     color: white;
     display: flex;
     align-items: center;
-        // div{
-        //     font-size: 40px;
-        //     padding: 0 20px; 
-        // }
+      
 }
 
 
 .blue-content{
     height: 200px;
-    
-    display: flex;
     justify-content: center;
         ul{
-            display: flex;
+            
             padding: 0 80px;
            justify-content: space-around;
            flex-wrap: wrap;
@@ -122,7 +116,6 @@ import AppComics from './AppComics.vue';
 }
 
 #jumbo{
-    display: flex;
     height: 45vh;
     width: 100%;
     object-fit: cover;

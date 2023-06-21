@@ -155,16 +155,16 @@
                 <!-- <img src="assets/dc-logo-bg.png" alt=""> -->
             </div> 
         </div>
-        <div class="lower-footer ">
+        <div class="lower-footer  ">
             <div class="container">
                 <div class="row">
-                    <div class="lower-content">
+                    <div class="lower-content flex">
                         <div>
                             <button>SIGN-UP NOW!</button>
                         </div>
                         <div>
                             <h3>FOLLOW US</h3>
-                            <ul>
+                            <ul class="flex">
                                 <li>
                                     <a href="#">
                                         <img src="assets/footer-facebook.png" alt="">
@@ -197,8 +197,6 @@
 
             </div>
         </div>
-
-
     </footer>
 
 </template>
@@ -237,8 +235,7 @@ h3{
     padding: 10px 0;
 }
 
-.flex{
-    display: flex;
+.container.flex{
     justify-content: space-between;
 }
 .logo{
@@ -274,7 +271,6 @@ h3{
 .lower-content{
     height: 100%;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
      div{
@@ -285,7 +281,6 @@ h3{
                 font-size: 22px;
             }
             ul{
-                display: flex;
                 li{
                     padding: 0 10px;
                 }

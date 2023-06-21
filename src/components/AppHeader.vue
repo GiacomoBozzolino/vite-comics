@@ -71,13 +71,13 @@
 </script>
 
 <template lang="">
-    <header class="container">
+    <header class="container flex">
         <div>
             <img src="/assets/dc-logo.png" alt="">
         </div>
         <div>
-            <ul>
-                <li v-for="(item, index) in links" :class="item.active ? 'active' : ''" :key="index">
+            <ul class="flex ">
+                <li  v-for="(item, index) in links" :class="item.active ? 'active' : ''" :key="index">
                     <a :href="item.link">{{item.label}} </a>
                 </li>
             </ul>
@@ -87,8 +87,6 @@
 
 <style lang="scss" scoped>
 header{
-   
-    display: flex;
     height: 150px;
     padding: 20px;
     justify-content: space-between;
@@ -97,11 +95,8 @@ header{
 }
 
 ul{
-    display: flex;
-    flex-wrap: wrap;
     height: 150px;
     align-items: center;
-
     li{
         display: flex;
         margin: 0 10px;
