@@ -1,9 +1,11 @@
 <script>
 import comics from '../data/dc-comics.js';
+import AppComics from './AppComics.vue';
 
     export default {
         components: {
             comics,
+            AppComics
         },
 
 
@@ -47,7 +49,9 @@ import comics from '../data/dc-comics.js';
     <div class="black">
         <div class="container content">
             <div id="series">CURRENT SERIES</div>
-            <div v-for="(comics, index) in NewComics" :key="index"> {{comics.series}} </div> 
+            <div class="flex flex-wrap">
+                <AppComics v-for="(comics, index) in NewComics" :key="index" :recentComics='comics'  /> 
+            </div>
             
         </div>
     </div>
@@ -81,10 +85,10 @@ import comics from '../data/dc-comics.js';
     color: white;
     display: flex;
     align-items: center;
-        div{
-            font-size: 40px;
-            padding: 0 20px; 
-        }
+        // div{
+        //     font-size: 40px;
+        //     padding: 0 20px; 
+        // }
 }
 
 
@@ -122,7 +126,7 @@ import comics from '../data/dc-comics.js';
     height: 45vh;
     width: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: top center;
 }
 
 #series{
