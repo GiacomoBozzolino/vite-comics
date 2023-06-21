@@ -1,7 +1,17 @@
 <script>
+import comics from '../data/dc-comics.js';
+
     export default {
+        components: {
+            comics,
+        },
+
+
         data() {
             return {
+                NewComics: comics,
+
+
                 menu: [
                     {
                         label: 'DIGITAL COMICS',
@@ -37,7 +47,7 @@
     <div class="black">
         <div class="container content">
             <div id="series">CURRENT SERIES</div>
-            <div> --Content goes here-- </div> 
+            <div v-for="(comics, index) in NewComics" :key="index"> {{comics.series}} </div> 
             
         </div>
     </div>
@@ -67,7 +77,7 @@
 
 .content{
     position: relative;
-    height: 150px;
+    // height: 150px;
     color: white;
     display: flex;
     align-items: center;
