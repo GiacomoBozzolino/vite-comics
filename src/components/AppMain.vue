@@ -31,26 +31,28 @@
 </script>
 
 <template lang="">
-    <div>
-        <div class="black">
-            <div class="container content">
-                <div> --Content goes here-- </div> 
-                
-            </div>
-        </div>
-        <div class="blue">
-            <div class="container blue-content">
-                <ul>
-                    <li v-for="(item, index) in menu" :key="index">
-                        <a href="#">
-                            <img :src="item.img" alt="">
-                            <div>{{item.label}}</div>
-                        </a>
-                    </li>   
-                </ul>
-            </div>
+    <div >
+        <img id="jumbo" src="/assets/jumbotron.jpg" >
+    </div>
+    <div class="black">
+        <div class="container content">
+            <div> --Content goes here-- </div> 
+            
         </div>
     </div>
+    <div class="blue">
+        <div class="container blue-content">
+            <ul>
+                <li v-for="(item, index) in menu" :key="index">
+                    <a href="#">
+                        <img :src="item.img" alt="">
+                        <div>{{item.label}}</div>
+                    </a>
+                </li>   
+            </ul>
+        </div>
+    </div>
+   
 </template>
 
 
@@ -103,5 +105,12 @@
         }
 
 }
-    
+
+#jumbo{
+    display: flex;
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
 </style>
