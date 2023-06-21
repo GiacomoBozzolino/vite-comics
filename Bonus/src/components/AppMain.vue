@@ -32,10 +32,7 @@
             padding: 0 20px; 
         }
 }
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
-  }
+
 
 
 

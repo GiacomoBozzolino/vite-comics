@@ -209,10 +209,6 @@ footer{
     background-image: url(public/assets/footer-bg.jpg);
     background-size: cover;
 }
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
-  }
 
 .upper-footer{
     background-size: cover;
@@ -262,6 +258,7 @@ h3{
                 color: white;
                 font-size: 17px;
                 font-weight: bold;
+                cursor: pointer;
 
             }
         }

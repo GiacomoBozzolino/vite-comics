@@ -17,23 +17,18 @@ export default {
 
 
 <template lang="">
-  <div  class="container">
-    <div>
-      <AppHeader/>
-    </div>
-    <div>
-      <AppMain/>
-      <AppJumbotron/>
-    </div>
-    <div>
-      <AppFooter/>
-    </div>
-
+  
+  <div>
+    <AppHeader/>
   </div>
-  
-    
+  <div>
+    <AppMain/>
+    <AppJumbotron/>
+  </div>
+  <div>
+    <AppFooter/>
+  </div>
 
-  
 </template>
 
 

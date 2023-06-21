@@ -51,12 +51,6 @@
     background-color:#1F81FA ;
 }
 
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
-
 .blue-content{
     height: 200px;
     

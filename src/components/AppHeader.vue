@@ -78,7 +78,7 @@
         <div>
             <ul>
                 <li v-for="(item, index) in links" :class="item.active ? 'active' : ''" :key="index">
-                    <a :href="item.link">{{item.label}}</a>
+                    <a :href="item.link">{{item.label}} </a>
                 </li>
             </ul>
         </div>
@@ -101,22 +101,24 @@ ul{
     flex-wrap: wrap;
     height: 150px;
     align-items: center;
+
     li{
         display: flex;
         margin: 0 10px;
         height: 100%;
-         align-items: center;
+        align-items: center;
         padding-bottom: 5px;
-        font-weight: 600;
-     
-        
+        font-weight: 600; 
+            &:hover{
+                border-bottom: 5px solid #1F81FA;
+                padding-bottom: 0;
+    
+                a{
+                    color:#1F81FA
+                }
+            }
     }
 }
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
   .active{
     border-bottom: 5px solid #1F81FA;
     padding-bottom: 0;

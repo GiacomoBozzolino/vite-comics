@@ -262,6 +262,7 @@ h3{
                 color: white;
                 font-size: 17px;
                 font-weight: bold;
+                cursor: pointer;
 
             }
         }

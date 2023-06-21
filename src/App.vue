@@ -15,22 +15,15 @@ export default {
 
 
 <template lang="">
-  <div  class="container">
-    <div>
-      <AppHeader/>
-    </div>
-    <div>
-      <AppMain/>
-    </div>
-    <div>
-      <AppFooter/>
-    </div>
-
+  <div>
+    <AppHeader/>
   </div>
-  
-    
-
-  
+  <div>
+    <AppMain/>
+  </div>
+  <div>
+    <AppFooter/>
+  </div>
 </template>
 
 
