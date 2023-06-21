@@ -36,6 +36,7 @@
     </div>
     <div class="black">
         <div class="container content">
+            <div id="series">CURRENT SERIES</div>
             <div> --Content goes here-- </div> 
             
         </div>
@@ -65,8 +66,8 @@
 }
 
 .content{
+    position: relative;
     height: 150px;
-   
     color: white;
     display: flex;
     align-items: center;
@@ -112,5 +113,17 @@
     width: 100%;
     object-fit: cover;
     object-position: top;
+}
+
+#series{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    background-color: #1F81FA;
+    padding: 10px 20px;
+    font-weight: bold;
+    top: -25px;
+
+
 }
 </style>
